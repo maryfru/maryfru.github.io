@@ -13,6 +13,10 @@ skillsEl.innerHTML = skillsHTML;
 var pageIds = ["home", "skills", "languages", "projects"];
 
 function hideAllPages() {
+  var pages = document.querySelectorAll(".page");
+  pages.forEach(function (page) {
+    console.warn("inside pages.forEach", page);
+  });
   pageIds.forEach(function (pageId) {
     hide(pageId);
   });
