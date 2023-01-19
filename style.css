@@ -147,3 +147,10 @@ table {
   text-decoration: none;
   color: #1a3642;
 }
+#skills-list li {
+  font-weight: bold;
+}
+#skills-list span {
+  color: gray;
+  font-weight: 200;
+}
