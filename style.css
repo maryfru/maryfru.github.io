@@ -1,3 +1,17 @@
+/* 
+COLOR PALETE 
+https://coolors.co/3c7a89-656565-d5cfe1-240b36-d4bebe
+#428476 - Darker Mint Green
+#234f7f - Dark Blue
+#66baa2 - Lighter Mint Green
+#c98742 - Orange
+#e0dfdc - Gray
+#cd994a - Brown To Orange
+#1a3642 - Blue Almost Black
+*/
+
+/*Global styles 
+-------------------------------------------*/
 html {
   height: 100%;
 }
@@ -11,9 +25,17 @@ body {
 }
 
 table {
-  margin-bottom: 10%;
+  margin-bottom: 10px;
 }
 
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/*About Page / Profile
+-------------------------------------------*/
 #header-content {
   display: flex;
   flex-direction: row;
@@ -60,55 +82,8 @@ table {
   cursor: pointer;
 }
 
-#content {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-}
-
-#side-menu {
-  padding: 5px;
-}
-
-#side-menu > section {
-  margin: 0 10px 10px 0;
-  padding: 10px;
-  background-color: #66baa2;
-  box-shadow: 5px 5px 3px #c98742;
-  border-radius: 3px;
-}
-
-#main {
-  flex: 1;
-  padding: 5px;
-}
-
-#main > section {
-  margin: 0 10px 10px 0;
-  padding: 10px;
-  background-color: #66baa2;
-  box-shadow: 5px 5px 3px #c98742;
-  border-radius: 3px;
-}
-
-#subscriberEmail {
-  background: yellow;
-}
-
-.favorite {
-  font-weight: bold;
-  color: darkblue;
-}
-
-.page {
-  display: none;
-  border-radius: 0.8rem;
-  border: 3px solid #e0dfdc;
-  background: #ffffff;
-  padding: 0 10px 0 10px;
-  margin-bottom: 10px;
-}
-
+/*Top-menu-bar
+-------------------------------------------*/
 #top-menu-bar {
   text-align: center;
   background: linear-gradient(45deg, #cd994a, transparent);
@@ -129,12 +104,66 @@ table {
   padding: 5px 8px;
   transition: 0.5s;
 }
-
 #top-menu-bar a:hover {
   color: #1a3642;
   background: #c98742;
 }
 
+/*SIDE-MENU / EMAIL
+-------------------------------------------*/
+#side-menu {
+  padding: 5px;
+}
+
+#side-menu > section {
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  background-color: #66baa2;
+  box-shadow: 5px 5px 3px #c98742;
+  border-radius: 3px;
+}
+
+#subscriberEmail {
+  background: yellow;
+}
+
+/*SIDE-MENU / INTERACTIVE - in work
+-------------------------------------------*/
+
+/*MAIN-MENU / VALUES
+-------------------------------------------*/
+#main {
+  flex: 1;
+  padding: 5px;
+}
+
+#main > section {
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  background-color: #66baa2;
+  box-shadow: 5px 5px 3px #c98742;
+  border-radius: 3px;
+}
+
+.page {
+  display: none;
+  border-radius: 0.8rem;
+  border: 3px solid #e0dfdc;
+  background: #ffffff;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+}
+
+#skills-list li {
+  font-weight: bold;
+}
+#skills-list span {
+  color: gray;
+  font-weight: 200;
+}
+
+/*Contact Info / Footer
+-------------------------------------------*/
 #footer-content {
   padding: 6px;
   text-align: center;
@@ -147,10 +176,6 @@ table {
   text-decoration: none;
   color: #1a3642;
 }
-#skills-list li {
-  font-weight: bold;
-}
-#skills-list span {
-  color: gray;
-  font-weight: 200;
-}
+
+/*Responsive - in work
+-------------------------------------------*/
