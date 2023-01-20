@@ -1,13 +1,15 @@
 /* 
 COLOR PALETE 
 https://coolors.co/3c7a89-656565-d5cfe1-240b36-d4bebe
-#428476 - Darker Mint Green
-#234f7f - Dark Blue
-#66baa2 - Lighter Mint Green
-#c98742 - Orange
-#e0dfdc - Gray
-#cd994a - Brown To Orange
-#1a3642 - Blue Almost Black
+#F5F749 - Maximum Yellow
+#B33F62 - Irresistible (red)
+#F2EFEA - Isabelline (white) 
+#468C98 - Steel Teal (dark mint)
+#192BC2 - Persian Blue (vibrant blue)
+#91171F - Carmine (vibrand red)
+#0A090C - Rich Black
+#E16036 - Flame (darker orange)
+#D8E1FF - Lavender Web (pale color)
 */
 
 /*Global styles 
@@ -19,7 +21,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background: #ccffcc;
+  background: #000000;
   display: flex;
   flex-direction: column;
 }
@@ -40,53 +42,50 @@ table {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: linear-gradient(45deg, #428476, transparent);
+  background: linear-gradient(45deg, #d8e1ff, transparent);
 }
 
-#my-picture {
+#header-content h1,
+h2 {
   margin: 5px;
 }
 
-.avatar {
-  border: 1px solid #fff;
+#header-content a {
+  color: #192bc2;
+  text-decoration: none;
+}
+
+#header-content a:hover {
+  color: #91171f;
+  text-decoration: underline;
+}
+
+#my-picture img {
+  margin: 5px;
+  border: 2px solid #0a090c;
   border-radius: 50%;
 }
 
 #name {
   flex: 1;
-  padding: 10px;
-}
-
-#name a {
-  color: #234f7f;
-  text-decoration: none;
-}
-
-#name a:hover {
-  text-decoration: underline;
+  padding: 5px;
 }
 
 #job-title {
-  margin: 5px 0;
   font-weight: bold;
   font-size: 1em;
 }
 
-#fun-site {
+#creepy-cat {
   margin: 5px;
   text-align: right;
-  color: red;
-}
-
-.click {
-  cursor: pointer;
 }
 
 /*Top-menu-bar
 -------------------------------------------*/
 #top-menu-bar {
   text-align: center;
-  background: linear-gradient(45deg, #cd994a, transparent);
+  background: #468c98;
   margin: 0;
 }
 
@@ -100,13 +99,13 @@ table {
   display: inline-block;
   border-radius: 0.7em;
   text-decoration: none;
-  color: #1a3642;
+  color: #f5f749;
   padding: 5px 8px;
   transition: 0.5s;
 }
 #top-menu-bar a:hover {
-  color: #1a3642;
-  background: #c98742;
+  color: #b33f62;
+  background: #1f2041;
 }
 
 /*SIDE-MENU / EMAIL
@@ -118,8 +117,8 @@ table {
 #side-menu > section {
   margin: 0 10px 10px 0;
   padding: 10px;
-  background-color: #66baa2;
-  box-shadow: 5px 5px 3px #c98742;
+  background-color: #d8e1ff;
+  box-shadow: 5px 5px 3px #468c98;
   border-radius: 3px;
 }
 
@@ -140,8 +139,8 @@ table {
 #main > section {
   margin: 0 10px 10px 0;
   padding: 10px;
-  background-color: #66baa2;
-  box-shadow: 5px 5px 3px #c98742;
+  background-color: #d8e1ff;
+  box-shadow: 5px 5px 3px #468c98;
   border-radius: 3px;
 }
 
@@ -167,7 +166,7 @@ table {
 #footer-content {
   padding: 6px;
   text-align: center;
-  background: linear-gradient(45deg, #428476, transparent);
+  background: #d8e1ff;
 }
 
 #footer-content a {
