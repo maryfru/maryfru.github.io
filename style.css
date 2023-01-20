@@ -30,6 +30,10 @@ table {
   margin-bottom: 10px;
 }
 
+abbr {
+  color: gray;
+}
+
 #content {
   flex: 1;
   display: flex;
@@ -142,6 +146,16 @@ h2 {
   background-color: #d8e1ff;
   box-shadow: 5px 5px 3px #468c98;
   border-radius: 3px;
+}
+
+#main a {
+  color: #192bc2;
+  text-decoration: none;
+}
+
+#main a:hover {
+  color: #91171f;
+  text-decoration: underline;
 }
 
 .page {
