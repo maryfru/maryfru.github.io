@@ -40,6 +40,10 @@ abbr {
   flex-direction: row;
 }
 
+.hide-marker {
+  list-style-type: none;
+}
+
 /*About Page / Profile
 -------------------------------------------*/
 #header-content {
