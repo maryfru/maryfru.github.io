@@ -89,6 +89,10 @@ h2 {
   text-align: right;
 }
 
+.click {
+  cursor: pointer;
+}
+
 /*Top-menu-bar
 -------------------------------------------*/
 #top-menu-bar {

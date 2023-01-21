@@ -51,3 +51,27 @@ function initMenu() {
 
 displayPage("skills");
 initMenu();
+
+/* creppy-cat confetti party */
+
+const catPic = document.querySelector("#creepy-cat");
+const canvas = document.querySelector("#confetti");
+
+const jsConfetti = new JSConfetti();
+
+catPic.addEventListener("click", () => {
+  document.body.style.backgroundColor = "#F2EFEA";
+
+  setTimeout(function () {
+    document.body.style.background = "#000000";
+  }, 3000);
+
+  jsConfetti.addConfetti();
+});
+
+/* Combine different properties: using
+{
+  emojis: ["🦄", "🌸"],
+  emojiSize: 100,
+  confettiNumber: 30,
+} */
