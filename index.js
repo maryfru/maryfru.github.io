@@ -44,7 +44,7 @@ function initMenu() {
   });
 }
 
-displayPage("skills");
+displayPage("home");
 initMenu();
 
 const f1 = function () {
