@@ -51,7 +51,7 @@
           <a href="#" data-page="languages">Known Language</a>
         </li>
         <li><a href="#" data-page="projects">Projects</a></li>
-        <li><a href="#" data-page="rubik">Rubik</a></li>
+        <li><a href="#" data-page="games">Game 🎮</a></li>
       </ul>
     </header>
 
@@ -206,9 +206,40 @@
             <h3>Projects</h3>
             <p>Something about me</p>
           </div>
-          <div id="rubik" class="page">
-            <h3>Rubik...</h3>
-            <p>Something about me</p>
+          <div id="games" class="page">
+            <h3>Rock Paper Scissors Game</h3>
+            <div class="score-board">
+              <div id="user-label" class="badge">user</div>
+              <div id="computer-label" class="badge">comp</div>
+              <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
+
+            <div class="result">
+              <p>🎭 Take a break and have some fun 🎭</p>
+            </div>
+
+            <div class="choices">
+              <div id="r" class="choice">
+                <img
+                  src="img/rock.png"
+                  alt="Hand rock from the website icons8.com"
+                />
+              </div>
+              <div id="p" class="choice">
+                <img
+                  src="img/paper.png"
+                  alt="Hand paper from the website icons8.com"
+                />
+              </div>
+              <div id="s" class="choice">
+                <img
+                  src="img/scissors.png"
+                  alt="Hand scissors from the website icons8.com"
+                />
+              </div>
+            </div>
+
+            <p id="action-message">Make your move.</p>
           </div>
         </section>
       </div>
@@ -241,6 +272,7 @@
 
       <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
       <script src="index.js"></script>
+      <script src="app.js"></script>
     </footer>
 
     <!-- <script src="example.js"></script> -->

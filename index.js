@@ -44,7 +44,7 @@ function initMenu() {
   });
 }
 
-displayPage("home");
+displayPage("games");
 initMenu();
 
 const f1 = function () {
