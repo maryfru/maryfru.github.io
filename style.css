@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Asap:wght@400;500;700&family=EB+Garamond:wght@400;500&family=Open+Sans:wght@400;600&family=Quattrocento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Open+Sans&display=swap");
 
 /* 
@@ -26,10 +27,22 @@ body {
   background: #000000;
   display: flex;
   flex-direction: column;
+  font-family: Garamond, sans-serif;
+  color: #333;
 }
 
 table {
+  border-collapse: collapse;
   margin-bottom: 10px;
+  width: 100%;
+  border: transparent;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #1f2041;
 }
 
 abbr {
@@ -111,15 +124,19 @@ h2 {
 
 #top-menu-bar a {
   display: inline-block;
-  border-radius: 0.7em;
+  border-radius: 0.9em;
   text-decoration: none;
   color: #f5f749;
-  padding: 5px 8px;
+  padding: 6px 8px;
   transition: 0.5s;
 }
 #top-menu-bar a:hover {
   color: #b33f62;
   background: #1f2041;
+}
+
+a > span {
+  font-size: 13px;
 }
 
 /*SIDE-MENU / EMAIL
@@ -143,6 +160,11 @@ h2 {
 
 /*SIDE-MENU / INTERACTIVE - see Pacman below
 -------------------------------------------*/
+.btn {
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+}
 
 /*MAIN-MENU / VALUES
 -------------------------------------------*/
@@ -172,8 +194,7 @@ h2 {
 .page {
   display: none;
   border-radius: 0.8rem;
-  border: 3px solid #e0dfdc;
-  background: #ffffff;
+  border: 3px solid #1f2041;
   padding: 0 10px 0 10px;
   margin-bottom: 10px;
 }
@@ -204,6 +225,10 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+footer img {
+  height: 20px;
 }
 
 /*Pacman 
@@ -384,10 +409,23 @@ h2 {
 }
 
 #games > h3 {
-  color: #b33f62;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
   text-align: center;
   padding: 20px;
   font-family: Asap, sans-serif;
+  font-size: 50px;
 }
 
 .score-board {
