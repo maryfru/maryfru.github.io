@@ -33,9 +33,9 @@ body {
 
 table {
   border-collapse: collapse;
+  border: transparent;
   margin-bottom: 10px;
   width: 100%;
-  border: transparent;
 }
 
 th,
@@ -49,14 +49,8 @@ abbr {
   color: gray;
 }
 
-#content {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-}
-
-.hide-marker {
-  list-style-type: none;
+h3 {
+  color: BLUEVIOLET;
 }
 
 /*About Page / Profile
@@ -97,6 +91,10 @@ h2 {
 #job-title {
   font-weight: bold;
   font-size: 1em;
+}
+
+.hide-marker {
+  list-style-type: none;
 }
 
 #creepy-cat {
@@ -141,6 +139,12 @@ a > span {
 
 /*SIDE-MENU / EMAIL
 -------------------------------------------*/
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
 #side-menu {
   flex: 1;
   padding: 5px;
