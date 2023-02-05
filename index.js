@@ -44,7 +44,16 @@ function initMenu() {
   });
 }
 
-displayPage("games");
+function toggleSecret() {
+  const secret = document.getElementById("hidden-message");
+  if (secret.style.display === "block") {
+    secret.style.display = "none";
+  } else {
+    secret.style.display = "block";
+  }
+}
+
+displayPage("home");
 initMenu();
 
 const f1 = function () {
