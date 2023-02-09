@@ -43,6 +43,21 @@ function initMenu() {
     }
   });
 }
+/* FORM - Wave Animation for side-menu */
+
+const labels = document.querySelectorAll(".form-control label");
+
+labels.forEach((label) => {
+  label.innerHTML = label.innerText
+    .split("")
+    .map(
+      (letter, idx) =>
+        `<span style="transition-delay: ${idx * 50}ms">${letter}</span>`
+    )
+    .join("");
+});
+
+/* Hidden secret toggle button */
 
 function toggleSecret() {
   const secret = document.getElementById("hidden-message");

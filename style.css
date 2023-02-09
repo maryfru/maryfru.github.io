@@ -50,7 +50,7 @@ abbr {
 }
 
 h3 {
-  color: BLUEVIOLET;
+  color: blueviolet;
 }
 
 /*About Page / Profile
@@ -158,14 +158,47 @@ a > span {
   border-radius: 3px;
 }
 
-#subscriberEmail {
-  background: yellow;
+.form-control {
+  position: relative;
+  margin: 30px 20px 30px 20px;
+}
+
+.form-control input {
+  border: transparent;
+  border-bottom: 1px solid #1f2041;
+  display: block;
+  padding: 5px;
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+
+.form-control input:focus {
+  border-bottom-color: blueviolet;
+  outline: none;
+}
+
+.form-control label {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: blueviolet;
+  transform: translateY(-25px);
+}
+
+.form-control label span {
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  min-width: 5px;
 }
 
 /*SIDE-MENU / INTERACTIVE - also see Pacman below
 -------------------------------------------*/
 #hidden-message {
-  background-image: linear-gradient(to left, orange, blue, red);
+  background-image: linear-gradient(to left, orange, green, red);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -267,6 +300,7 @@ footer img {
   padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .path::after {

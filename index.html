@@ -57,46 +57,27 @@
       </ul>
     </header>
 
-    <!-- *********************** SIDE-MENU / EMAIL *********************** -->
+    <!-- *********************** SIDE-MENU / FORM *********************** -->
     <section id="content">
       <div id="side-menu">
         <section>
-          <form action="">
-            <div>
-              <label for="subscriberEmail">Enter your Email:</label>
-              <input
-                type="email"
-                required
-                name="email"
-                id="subscriberEmail"
-                placeholder="your@email.com"
-              />
+          <h3>You can ping me a message!</h3>
+          <form action="https://formsubmit.co/mfrunzete@web.de" method="POST">
+            <div class="form-control">
+              <input type="hidden" name="_subject" value="New email wohoooo!" />
+              <input type="email" name="email" id="email" required />
+              <label for="email">Enter your email here</label>
             </div>
-            <div>
-              <label for="subscriber">Name:</label>
-              <input
-                type="text"
-                required
-                name="nume"
-                id="subscriber"
-                placeholder="Full Name"
-              />
+            <div class="form-control">
+              <input type="text" name="message" id="message" required />
+              <label for="message">Send me your message</label>
             </div>
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="btn">Let`s keep in touch</button>
           </form>
         </section>
 
         <!-- *********************** SIDE-MENU / INTERACTIVE *********************** -->
         <section>
-          <button type="button" class="btn" onclick="toggleSecret()">
-            Hidden secret
-          </button>
-          <p id="hidden-message">
-            <strong>Hey!</strong> Have you seen that creepy smile in the top
-            right corner? I wonder what would happen if ...
-            <em>you click on it?</em>
-          </p>
-
           <div class="path">
             <div class="pacman"></div>
             <div class="ghost">
@@ -104,6 +85,15 @@
               <div class="skirt"></div>
             </div>
           </div>
+
+          <button type="button" class="btn" onclick="toggleSecret()">
+            Hidden secret
+          </button>
+          <p id="hidden-message">
+            <strong>Hey!</strong> Have you seen that creepy smile in the top
+            right corner? I wonder what would happen...
+            <em>if you click on it?</em>
+          </p>
         </section>
         <!-- *********************** CONFETTI / CANVAS *********************** -->
         <canvas id="confetti"></canvas>
@@ -260,9 +250,7 @@
     <!-- *********************** CONTACT-INFO / FOOTER *********************** -->
     <footer id="footer-content" class="center-icons">
       <img src="linkedin-logo-png-2026.png" alt="linkedin logo" />
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/in/mary-ann-frunzete-454b37b1/"
+      <a target="_blank" href="https://www.linkedin.com/in/mary-ann-frunzete/"
         >LinkedIn</a
       >
       |
@@ -278,7 +266,7 @@
       |
       <img
         src="icons8-book-reading-100.png"
-        alt="Book reading from the website icons8.com "
+        alt="Book icon from the website icons8.com "
       />
       <a href="Cats/article.html" target="_blank">Worth reading</a>
 
