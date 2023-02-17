@@ -1,20 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Asap:wght@400;500;700&family=EB+Garamond:wght@400;500&family=Open+Sans:wght@400;600&family=Quattrocento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Open+Sans&display=swap");
 
-/* 
-COLOR PALETE 
-https://coolors.co/3c7a89-656565-d5cfe1-240b36-d4bebe
-#F5F749 - Maximum Yellow
-#B33F62 - Irresistible (red)
-#F2EFEA - Isabelline (white) 
-#468C98 - Steel Teal (dark mint)
-#192BC2 - Persian Blue (vibrant blue)
-#91171F - Carmine (vibrand red)
-#0A090C - Rich Black
-#E16036 - Flame (darker orange)
-#D8E1FF - Lavender Web (pale color)
-*/
-
 /*Global styles 
 -------------------------------------------*/
 html {
@@ -561,5 +547,10 @@ footer img {
   box-shadow: 0 0 10px #25292b;
 }
 
-/*Responsive - in work
+/*Responsive 
 -------------------------------------------*/
+@media (max-width: 700px) {
+  #content {
+    flex-direction: column-reverse;
+  }
+}
