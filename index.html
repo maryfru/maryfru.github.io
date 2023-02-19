@@ -17,7 +17,7 @@
       <div id="header-content">
         <div id="my-picture">
           <img
-            src="pic.jpg"
+            src="img/pic.jpg"
             width="100"
             alt="Portrait of Frunzete Mary-Ann Johanna"
           />
@@ -37,24 +37,25 @@
           <img
             id="creepy-cat"
             class="click"
-            src="cat.png"
+            src="img/cat.png"
             alt="Image by OpenClipart-Vectors from Pixabay"
             width="80px"
           />
         </div>
       </div>
-
-      <ul id="top-menu-bar">
-        <li><a href="#" data-page="home">HOME</a></li>
-        <li><a href="#" data-page="skills">Skills</a></li>
-        <li>
-          <a href="#" data-page="languages">Known Language</a>
-        </li>
-        <li><a href="#" data-page="projects">Projects</a></li>
-        <li>
-          <a href="#" data-page="games">Game <span>&#127918;</span></a>
-        </li>
-      </ul>
+      <nav>
+        <ul id="top-menu-bar">
+          <li><a href="#" data-page="home">HOME</a></li>
+          <li><a href="#" data-page="skills">Skills</a></li>
+          <li>
+            <a href="#" data-page="languages">Known Language</a>
+          </li>
+          <li><a href="#" data-page="projects">Projects</a></li>
+          <li>
+            <a href="#" data-page="games">Game <span>&#127918;</span></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- *********************** SIDE-MENU / FORM *********************** -->
@@ -182,26 +183,30 @@
           <div id="languages" class="page">
             <h3>Known Languages</h3>
             <table border="1">
-              <tr>
-                <th>Language</th>
-                <th>Level</th>
-              </tr>
-              <tr>
-                <td>Romanian</td>
-                <td>Native</td>
-              </tr>
-              <tr>
-                <td>German</td>
-                <td>Native</td>
-              </tr>
-              <tr>
-                <td>English</td>
-                <td>Expert</td>
-              </tr>
-              <tr>
-                <td>JavaScript</td>
-                <td>Beginner</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Language</th>
+                  <th>Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Romanian</td>
+                  <td>Native</td>
+                </tr>
+                <tr>
+                  <td>German</td>
+                  <td>Native</td>
+                </tr>
+                <tr>
+                  <td>English</td>
+                  <td>Expert</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td>Beginner</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div id="projects" class="page">
@@ -249,11 +254,11 @@
 
     <!-- *********************** CONTACT-INFO / FOOTER *********************** -->
     <footer id="footer-content" class="center-icons">
-      <img src="linkedin-logo-png-2026.png" alt="linkedin logo" />
+      <img src="img/linkedin-logo-png-2026.png" alt="linkedin logo" />
       <a target="_blank" href="https://www.linkedin.com/in/mary-ann-frunzete/"
         >LinkedIn</a
       >
-      |
+      <span class="margin">|</span>
       <img
         class="emoji"
         title=":octocat:"
@@ -263,9 +268,9 @@
         width="20"
       />
       <a href="https://github.com/maryfru" target="_blank">GitHub</a>
-      |
+      <span class="margin">|</span>
       <img
-        src="icons8-book-reading-100.png"
+        src="img/icons8-book-reading-100.png"
         alt="Book icon from the website icons8.com "
       />
       <a href="Cats/article.html" target="_blank">Worth reading</a>
